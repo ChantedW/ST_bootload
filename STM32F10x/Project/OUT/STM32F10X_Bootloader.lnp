@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"..\out\common.o"
+"..\out\download.o"
+"..\out\main.o"
+"..\out\stm32f10x_it.o"
+"..\out\ymodem.o"
+"..\out\stm32f10x_dma.o"
+"..\out\stm32f10x_exti.o"
+"..\out\stm32f10x_flash.o"
+"..\out\stm32f10x_gpio.o"
+"..\out\stm32f10x_rcc.o"
+"..\out\stm32f10x_usart.o"
+"..\out\misc.o"
+"..\out\system_stm32f10x.o"
+"..\out\core_cm3.o"
+"..\out\startup_stm32f10x_hd.o"
+--library_type=microlib --strict --scatter "..\OUT\STM32F10X_Bootloader.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\STM3210E-EVAL\STM32F10X_Bootloader.map" -o ..\OUT\STM32F10X_Bootloader.axf

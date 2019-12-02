@@ -1,0 +1,11 @@
+版本说明
+
+2014-11-26 Bootloader v1.0.0
+初次发布
+
+2014-11-27 Bootloader v1.0.1
+1 增加FLASH保护机制防止APP破坏Bootloader
+2 修复部分中断不能跳转的BUG
+
+
+
