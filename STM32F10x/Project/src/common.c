@@ -393,8 +393,19 @@ void Main_Menu(void)
 
   while (1)
   {
-
-    SerialPutString("  Please Enter Num 1 or SPACE for transfer file.\r\n\n");
+		SerialPutString("---------------------------------------------------------------\r\n");
+		SerialPutString("   fuction code         |        functio describe             |\r\n");
+		SerialPutString("------------------------|-------------------------------------|\r\n");
+		SerialPutString("     1/SPACE            |         transfer file               |\r\n");
+		SerialPutString("------------------------|-------------------------------------|\r\n");
+		SerialPutString("       3                |   quit update,jump to app           |\r\n");
+		SerialPutString("------------------------|-------------------------------------|\r\n");
+		SerialPutString("       4                |   Disable the write protection      |\r\n");
+		SerialPutString("---------------------------------------------------------------\r\n");
+		
+//    SerialPutString("  Please Enter Num 1 or SPACE for transfer file.\r\n\n");
+//		SerialPutString("  Please Enter Num 3 for quit update,jump to app .\r\n\n");
+//		SerialPutString("  Please Enter Num 4 for Disable the write protection of desired pages .\r\n\n");
     if(FlashProtection != 0)
     {
       SerialPutString(" Disable the write protection ------------------------- 4\r\n\n");
@@ -416,7 +427,7 @@ void Main_Menu(void)
     }
     else if (key == 0x33)
     {
-#if 0
+#if 1
       JumpAddress = *(__IO uint32_t*) (ApplicationAddress + 4);
 
       /* Jump to user application */

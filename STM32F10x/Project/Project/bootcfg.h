@@ -1,6 +1,11 @@
 #ifndef __BOOT_CFG_
 #define __BOOT_CFG_
 
+/**************************include******************************/
+
+#include "iap_flag.h"
+
+/***************************************************************/
 #define STM32F107VC
 
 //------------------ <<< Use Configuration Wizard in Context Menu >>> ------------------------------
@@ -84,14 +89,14 @@
 #define IAP_FLAG_PIN         	   	7    // 5 端口引脚
 #define IAP_MEMORY_ENALBE         0    // 6 存储使能
 #define IAP_MEMORY_EEPROM         1    // 7 选择EEPrROM
-#define AT_ADDR                   0xAC // 8 物理地址
+#define AT_ADDR                   0xA0 // 8 物理地址
 #define AT_DATA_ADDR              0    // 8 数据地址
 #define IAP_MEMORY_FLASH          0    // 9 选择flash
-#define FLASH_DATA_ADDR           0x80013F5 // 10 物理地址
+#define FLASH_DATA_ADDR           0x80013F5 // 10 数据地址
 
 #if IAP_SET
 
-	#if IAP_PORT_SET_ENALBE
+	#if IAP_PORT_SET_ENALBE           // 使用GPIO口
 		
 		#if IAP_FLAG_PORT == 0
         #define FLAG_PORT   GPIOA
@@ -108,6 +113,27 @@
 		#define FLAG_PIN   ((uint16_t)1 << IAP_FLAG_PIN)
 		
 	#endif
+	
+	#if IAP_MEMORY_ENALBE            // 使用存储作为标识
+		
+		#if IAP_MEMORY_EEPROM &&  (!IAP_MEMORY_FLASH) 
+		    
+			#define STORE_PHYSIC_ADDR   	AT_ADDR
+			
+			#define STORE_DATA_ADDR       AT_DATA_ADDR
+			
+			#define EPPROM_WR   STORE_PHYSIC_ADDR
+			#define EPPROM_RD   (STORE_PHYSIC_ADDR|0x01)
+			
+		#endif
+		
+		#if IAP_MEMORY_FLASH && (!IAP_MEMORY_EEPROM)
+		    
+			#define STORE_DATA_ADDR      FLASH_DATA_ADDR
+			
+		#endif
+		
+	#endif
 		
 #endif
 
@@ -116,6 +142,9 @@
 // </e> End of IAP Signal Configuration
 
 // <<< End of configuration section >>>
+
+
+/**************************function declare******************************/
 
 
 

@@ -4,6 +4,7 @@
 "..\out\main.o"
 "..\out\stm32f10x_it.o"
 "..\out\ymodem.o"
+"..\out\iap_flag.o"
 "..\out\stm32f10x_dma.o"
 "..\out\stm32f10x_exti.o"
 "..\out\stm32f10x_flash.o"

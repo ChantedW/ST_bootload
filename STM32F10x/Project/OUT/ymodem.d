@@ -4,12 +4,13 @@
 ..\out\ymodem.o: D:\MDK\ARM\ARMCC\Bin\..\include\string.h
 ..\out\ymodem.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 ..\out\ymodem.o: ..\Project\bootcfg.h
-..\out\ymodem.o: ..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+..\out\ymodem.o: ..\inc\iap_flag.h
 ..\out\ymodem.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\out\ymodem.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+..\out\ymodem.o: ..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
 ..\out\ymodem.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 ..\out\ymodem.o: ..\inc\stm32f10x_conf.h
 ..\out\ymodem.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h
-..\out\ymodem.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 ..\out\ymodem.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
 ..\out\ymodem.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
 ..\out\ymodem.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h

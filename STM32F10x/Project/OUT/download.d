@@ -4,12 +4,13 @@
 ..\out\download.o: D:\MDK\ARM\ARMCC\Bin\..\include\string.h
 ..\out\download.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 ..\out\download.o: ..\Project\bootcfg.h
-..\out\download.o: ..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+..\out\download.o: ..\inc\iap_flag.h
 ..\out\download.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\out\download.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+..\out\download.o: ..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
 ..\out\download.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 ..\out\download.o: ..\inc\stm32f10x_conf.h
 ..\out\download.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h
-..\out\download.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 ..\out\download.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
 ..\out\download.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
 ..\out\download.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h

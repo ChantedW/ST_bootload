@@ -374,7 +374,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STM3210E_EVAL, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\inc;..\..\Libraries\CMSIS\CM3\CoreSupport;..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\..\Utilities\STM32_EVAL;..\Project</IncludePath>
+              <IncludePath>..\inc;..\..\Libraries\CMSIS\CM3\CoreSupport;..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\..\Utilities\STM32_EVAL;..\Project;..\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -447,6 +447,11 @@
               <FileName>bootcfg.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\bootcfg.h</FilePath>
+            </File>
+            <File>
+              <FileName>iap_flag.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\iap_flag.c</FilePath>
             </File>
           </Files>
         </Group>

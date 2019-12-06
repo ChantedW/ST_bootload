@@ -1,0 +1,16 @@
+..\out\iap_flag.o: ..\src\iap_flag.c
+..\out\iap_flag.o: ..\inc\iap_flag.h
+..\out\iap_flag.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\out\iap_flag.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+..\out\iap_flag.o: ..\Project\bootcfg.h
+..\out\iap_flag.o: ..\inc\iap_flag.h
+..\out\iap_flag.o: ..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+..\out\iap_flag.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+..\out\iap_flag.o: ..\inc\stm32f10x_conf.h
+..\out\iap_flag.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h
+..\out\iap_flag.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+..\out\iap_flag.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
+..\out\iap_flag.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+..\out\iap_flag.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+..\out\iap_flag.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+..\out\iap_flag.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
